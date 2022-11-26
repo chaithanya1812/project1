@@ -35,8 +35,7 @@
 <body>
 <center>
 <h1><font color='red'>CHAITHANYA <font></h1> 
-<h1><font color='blue'> LEARNING DevOps <font></h1>
-<h2> Never Stop Dreaming </h2>
+<h1><font color='blue'> Never Stop Dreaming <font></h1>
 <h2>Click Below Button To Check My Linkedin </h2>
 
   
