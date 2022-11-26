@@ -34,7 +34,6 @@
 </head>
 <body>
 <center>
-<img src="smiley.gif" alt="Smiley face" style="float:middle;width:42px;height:42px;">
 <h1><font color='red'>CHAITHANYA <font></h1> 
 <h1><font color='blue'> LEARNING DevOps <font></h1>
 <h2> Never Stop Dreaming </h2>
