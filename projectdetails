@@ -1,0 +1,25 @@
+step-1      Send build artifacts over SSH?
+-------------------------------------------
+DOCKERFILE DETAILS:
+FROM tomcat:8
+COPY ./sampleproject.war  /usr/local/tomcat/webapps/
+----------------------------------------------------
+PLAYBOOK DETAILS (chaitu.yaml):
+
+---
+- hosts: all
+  become: true
+  tasks:
+  - shell: sudo docker run -d --name chaitu2 -p 8091:8080 chaitu1812/project1
+--------------------------------------------------------------------------------
+
+step-2 Exec command?
+---------------------------------------------
+cd /home/ansible;
+sudo docker build -t  project1  -f /home/ansible/Dockerfile1 .;
+
+sudo docker tag project1 chaitu1812/project1;
+sudo docker push chaitu1812/project1;
+sudo docker image rm -f  project1 chaitu1812/project1;
+ansible-playbook chaitu.yaml
+-----------------------------------------------------------------------------
