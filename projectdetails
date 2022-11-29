@@ -2,6 +2,7 @@ step-1      Send build artifacts over SSH?
 -------------------------------------------
 DOCKERFILE DETAILS:
 FROM tomcat:8
+MAINTAINER "CHAITHANYA"
 COPY ./sampleproject.war  /usr/local/tomcat/webapps/
 ----------------------------------------------------
 PLAYBOOK DETAILS (chaitu.yaml):
