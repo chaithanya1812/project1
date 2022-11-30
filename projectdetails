@@ -17,7 +17,7 @@ PLAYBOOK DETAILS (chaitu.yaml):
 step-2 Exec command?
 ---------------------------------------------
 STEP-1.0
-1cd /home/ansible;
+cd /home/ansible;
 sudo docker build -t  project1  -f /home/ansible/Dockerfile1 .;
 
 sudo docker tag project1 chaitu1812/project1;
