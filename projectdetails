@@ -16,7 +16,8 @@ PLAYBOOK DETAILS (chaitu.yaml):
 
 step-2 Exec command?
 ---------------------------------------------
-cd /home/ansible;
+STEP-1.0
+1cd /home/ansible;
 sudo docker build -t  project1  -f /home/ansible/Dockerfile1 .;
 
 sudo docker tag project1 chaitu1812/project1;
@@ -24,3 +25,10 @@ sudo docker push chaitu1812/project1;
 sudo docker image rm -f  project1 chaitu1812/project1;
 ansible-playbook chaitu.yaml
 -----------------------------------------------------------------------------
+STEP-2.0
+cd /home/ansible;
+sudo docker stop chaitu2
+sudo docker rm -f chaitu2
+sudo docker rmi project1
+docker build -t  project1  -f /home/ansible/Dockerfile1
+sudo docker run -d --name chaitu2 -p 8091:8080 project1
